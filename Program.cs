@@ -17,11 +17,23 @@ namespace szamrendszerek
         }
         public static void szamol()
         {
-        
+        List<int> list = new List<int>();
+
+            while (bekeres() != 0) 
+            {
+                if (bekeres() % 2 == 0)
+                {
+                    list.Add(0);
+                }
+                else 
+                { 
+                    list.Add(1);
+                }
+                Console.WriteLine(" a bonáris szám = ");
         }
         static void Main(string[] args)
         {
-
+                szamol();
         }
     }
 }
